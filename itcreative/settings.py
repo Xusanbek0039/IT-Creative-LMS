@@ -72,7 +72,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'skillmate.urls'
+ROOT_URLCONF = 'itcreative.urls'
 
 TEMPLATES = [
     {
@@ -122,7 +122,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'skillmate.wsgi.application'
+WSGI_APPLICATION = 'itcreative.wsgi.application'
 
 
 # Database

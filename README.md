@@ -10,7 +10,8 @@
 ## Kirish
 **IT Creative** o'qituvchilarga talabalar uchun onlayn kurslarni yaratish va yuklash imkonini beruvchi elektron ta'lim platformasi. U kurslarni yaratish va boshqarish uchun qulay interfeysni taqdim etadi. Talabalar o'zlari tanlagan kurslarni ko'rib chiqishlari va ro'yxatdan o'tishlari mumkin. Skillmate, shuningdek, o'qituvchilarga kurslar tahlilini, masalan, ro'yxatga olishlarni ko'rish uchun asboblar panelini taklif qiladi. Python va Django bilan yaratilgan IT Creative veb-ishlab chiqish va xavfsizlik bo'yicha eng yaxshi amaliyotlarga amal qiladi.
 
-![rasm1](https://)
+**Loyihadan lavha**
+![rasm1](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/Screenshot%202023-12-11%20033711.png)
 
 ## Table of Content
   * [Introduction](#introduction)
