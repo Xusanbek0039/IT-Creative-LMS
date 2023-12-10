@@ -13,13 +13,15 @@
 **Loyihadan lavha**
 ![rasm1](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/Screenshot%202023-12-11%20033711.png)
 
-## Table of Content
-  * [Introduction](#introduction)
-  * [Installation](#installation)
-  * [Technologies Used](#technologies-used)
-  * [Features](#features)
-  * [Website Screenshots](#screenshots)
-  * [Conclusion](#conclusion)
+## MUNDARIJA
+  * [Kirish](#introduction)
+  * [O'rnatish](#O'rnatish majburiy)
+  * [Ishlatilgan texnologiyalar](#technologies-used)
+  * [Xususiyatlari](#features)
+  * [Website lavhalar](#screenshots)
+  * [Xulosa](#conclusion)
+
+
 
 ## O'rnatish majburiy 
 1. Repastoriyni clonlab oling:
@@ -69,26 +71,36 @@ python manage.py runserver
 
 
 ## Admin-panel
-![adminpanel](https://user-images.githubusercontent.com/106135144/227761162-573aabd7-3c88-4244-ad49-ec7bc68ac290.png)
+![adminpanel](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/adminpanel.png)
 
-![skillmate-upload-course](https://user-images.githubusercontent.com/106135144/227761259-bc27aa5f-e06e-482d-8986-ecdf3ac50bf7.png)
+## Kurs yuklash
+![rasm2](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/coursupload.png)
 
-## Contributing
-Contributions are welcome and encouraged! If you'd like to contribute to the project, please follow these steps:
+## Hisobga kirish saxifasi
+![rasn3](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/loginpage.png)
 
-1. Fork the repository
-2. Create a new branch
-3. Make your changes and commit them
-4. Push your changes to your forked repository
-5. Create a pull request
+## Ro'yxatdan o'tish saxifasi
+![sss3](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/signup.png)
 
-## Conclusion
-Skillmate is an online learning platform that allows instructors to create and sell courses to students created using Django.
+## Hisobdan chiqish saxifasi 
+![logout](https://github.com/Xusanbek0071/IT-Creative-LMS/blob/main/skrenshots/logout.png)
+
+
+## Hissa
+Hissalar mamnuniyat bilan qabul qilinadi va rag'batlantiriladi! Agar siz loyihaga hissa qo'shmoqchi bo'lsangiz, quyidagi bosqichlarni bajaring:
+
+
+## Xulosa
+IT Creative - bu o'qituvchilarga Django yordamida yaratilgan kurslarni yaratish va talabalarga sotish imkonini beruvchi onlayn o'quv platformasi.
+
 
 ### Yordam uchun ishlab chiquvchiga murojat qiling
 
 <div align="left">
   <a href="https://t.me/mbin_dev_0071" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+    <a href="https://t.me/mbin_dev_0071" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/github/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a>
 </div>
