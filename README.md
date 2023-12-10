@@ -21,40 +21,52 @@
   * [Website Screenshots](#screenshots)
   * [Conclusion](#conclusion)
 
-## Installation
-1. Clone the repository:
+## O'rnatish majburiy 
+1. Repastoriyni clonlab oling:
 ```
-https://github.com/ashish-makes/django-lms
+git clone https://github.com/Xusanbek0071/IT-Creative-LMS.git
 ```
-2. Navigate to the directory:
+2. CMD da cd buyrug'i orqali proekt papkasiga kirib oling:
 ```
-cd skillmate
+cd itcreative
 ```
-3. Run the server:
+3. Kerakli kutubxonalarni o'rnating:
+```
+pip install -r requirements.txt
+```
+4. Serverni ishga tushuring:
 ```
 python manage.py runserver
 ```
-4. Open your web browser and go to http://localhost:8000.
+5. Brazuer orqali locatportga kiring  http://localhost:8000.
   
   
-## Technologies used
+
+  
+## Ishlatilgan texnologiyalar
 1. HTML
 2. CSS
 3. JavaScript
 4. Python
 5. Django
 
-### Primary Modules used
+
+
+### Ishlatilgan asosiy modullar
 1. Django==4.1.4
 2. gunicorn==20.1.0
 3. whitenoise==6.3.0
 
-## Features
-1. User authentication and authorization.
-2. Course management system for teachers to create, manage and publish courses.
-3. View course and enrollment statistics, and more in Dashboard.
-4. Course catalog with various categories
-5. Responsive design for mobile and tablet devices
+
+
+## Xususiyatlari
+1. Foydalanuvchining autentifikatsiyasi va avtorizatsiyasi.
+2. Kurslarni yaratish, boshqarish va nashr etish uchun o'qituvchilar uchun kurslarni boshqarish tizimi.
+3. Boshqaruv panelida kurs va roʻyxatga olish statistikasi va boshqalarni koʻring.
+4. Turli toifalar bilan kurslar katalogi
+5. Mobil va planshet qurilmalari uchun sezgir dizayn
+
+
 
 ## Screenshots
 ![skillmate-dashboard](https://user-images.githubusercontent.com/106135144/227761162-573aabd7-3c88-4244-ad49-ec7bc68ac290.png)
