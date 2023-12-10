@@ -42,7 +42,7 @@ python manage.py runserver
   
   
 
-  
+
 ## Ishlatilgan texnologiyalar
 1. HTML
 2. CSS
@@ -68,8 +68,8 @@ python manage.py runserver
 
 
 
-## Screenshots
-![skillmate-dashboard](https://user-images.githubusercontent.com/106135144/227761162-573aabd7-3c88-4244-ad49-ec7bc68ac290.png)
+## Admin-panel
+![adminpanel](https://user-images.githubusercontent.com/106135144/227761162-573aabd7-3c88-4244-ad49-ec7bc68ac290.png)
 
 ![skillmate-upload-course](https://user-images.githubusercontent.com/106135144/227761259-bc27aa5f-e06e-482d-8986-ecdf3ac50bf7.png)
 
@@ -85,10 +85,10 @@ Contributions are welcome and encouraged! If you'd like to contribute to the pro
 ## Conclusion
 Skillmate is an online learning platform that allows instructors to create and sell courses to students created using Django.
 
-### Support My Work
+### Yordam uchun ishlab chiquvchiga murojat qiling
 
 <div align="left">
-  <a href="https://www.linkedin.com/in/ashish-makes/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+  <a href="https://t.me/mbin_dev_0071" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a>
 </div>
