@@ -1,4 +1,4 @@
-# Skillmate - An eLearning Platform
+# IT-Creative-LMS-Platform
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -7,10 +7,10 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-## Introduction
-**Skillmate** is an e-learning platform that allows instructors to create and upload online courses for students. It provides a user-friendly interface for creating and managing courses. Students can browse and enroll in courses of their choice. Skillmate also offers a dashboard for instructors to view their courses' analytics, such as enrollments. Built with Python and Django, Skillmate follows best practices in web development and security.
+## Kirish
+**IT Creative** o'qituvchilarga talabalar uchun onlayn kurslarni yaratish va yuklash imkonini beruvchi elektron ta'lim platformasi. U kurslarni yaratish va boshqarish uchun qulay interfeysni taqdim etadi. Talabalar o'zlari tanlagan kurslarni ko'rib chiqishlari va ro'yxatdan o'tishlari mumkin. Skillmate, shuningdek, o'qituvchilarga kurslar tahlilini, masalan, ro'yxatga olishlarni ko'rish uchun asboblar panelini taklif qiladi. Python va Django bilan yaratilgan IT Creative veb-ishlab chiqish va xavfsizlik bo'yicha eng yaxshi amaliyotlarga amal qiladi.
 
-![skillmate-django-online-learning-platform](https://user-images.githubusercontent.com/106135144/227760997-1512e3cc-f02f-4f3c-9a4f-a76dad267ebe.png)
+![rasm1](https://)
 
 ## Table of Content
   * [Introduction](#introduction)

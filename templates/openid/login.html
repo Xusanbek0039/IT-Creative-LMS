@@ -2,17 +2,17 @@
 
 {% load i18n %}
 
-{% block head_title %}OpenID Sign In{% endblock %}
+{% block head_title %}OneID Tizimga Kirish{% endblock %}
 
 {% block content %}
 
-<h1>{% trans 'OpenID Sign In' %}</h1>
+<h1>{% trans 'OneID Tizimga Kirish' %}</h1>
 
 
 <form id="openid_login_form" class="openid_login" method="post" action="{% url 'openid_login' %}">
 {% csrf_token %}
 {{form.as_p}}
-<button type="submit">Sign In</button>
+<button type="submit">Tizimga kirish</button>
 </form>
 
 {% endblock %}

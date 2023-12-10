@@ -2,12 +2,12 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "E-mail Addresses" %}{% endblock %}
+{% block head_title %}{% trans "E-mail manzil" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "E-mail Addresses" %}</h1>
+    <h1>{% trans "E-mail manzil" %}</h1>
 {% if user.emailaddress_set.all %}
-<p>{% trans 'The following e-mail addresses are associated with your account:' %}</p>
+<p>{% trans 'Quyidagi elektron pochta manzillari hisobingizga bog\'langan:' %}</p>
 
 <form action="{% url 'account_email' %}" class="email_list" method="post">
 {% csrf_token %}
@@ -21,36 +21,36 @@
 
 {{ emailaddress.email }}
     {% if emailaddress.verified %}
-    <span class="verified">{% trans "Verified" %}</span>
+    <span class="verified">{% trans "Tasdiqlangan " %}</span>
     {% else %}
-    <span class="unverified">{% trans "Unverified" %}</span>
+    <span class="unverified">{% trans "Tasdiqlanmagan" %}</span>
     {% endif %}
-      {% if emailaddress.primary %}<span class="primary">{% trans "Primary" %}</span>{% endif %}
+      {% if emailaddress.primary %}<span class="primary">{% trans "Asosiy" %}</span>{% endif %}
 </label>
 </div>
   {% endfor %}
 
 <div class="buttonHolder">
-      <button class="secondaryAction" type="submit" name="action_primary" >{% trans 'Make Primary' %}</button>
-      <button class="secondaryAction" type="submit" name="action_send" >{% trans 'Re-send Verification' %}</button>
-      <button class="primaryAction" type="submit" name="action_remove" >{% trans 'Remove' %}</button>
+      <button class="secondaryAction" type="submit" name="action_primary" >{% trans 'Asosiy qiling' %}</button>
+      <button class="secondaryAction" type="submit" name="action_send" >{% trans 'Tekshirishni qayta yuborish' %}</button>
+      <button class="primaryAction" type="submit" name="action_remove" >{% trans 'O\'chirish' %}</button>
 </div>
 
 </fieldset>
 </form>
 
 {% else %}
-<p><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
+<p><strong>{% trans 'Ogohlantirish:'%}</strong> {% trans "Hozirda sizda hech qanday elektron pochta manzili o'rnatilmagan. Bildirishnomalarni qabul qilish, parolni tiklash va h.k. uchun siz haqiqatan ham elektron pochta manzilini qo'shishingiz kerak." %}</p>
 
 {% endif %}
 
   {% if can_add_email %}
-    <h2>{% trans "Add E-mail Address" %}</h2>
+    <h2>{% trans "E-mail manzil qo'shish" %}</h2>
 
     <form method="post" action="{% url 'account_email' %}" class="add_email">
         {% csrf_token %}
         {{ form.as_p }}
-        <button name="action_add" type="submit">{% trans "Add E-mail" %}</button>
+        <button name="action_add" type="submit">{% trans "E-mail qo'shish" %}</button>
     </form>
   {% endif %}
 
@@ -60,7 +60,7 @@
 {% block extra_body %}
 <script type="text/javascript">
 (function() {
-  var message = "{% trans 'Do you really want to remove the selected e-mail address?' %}";
+  var message = "{% trans 'Haqiqatan ham tanlangan elektron pochta manzilini olib tashlamoqchimisiz?' %}";
   var actions = document.getElementsByName('action_remove');
   if (actions.length) {
     actions[0].addEventListener("click", function(e) {
