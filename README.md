@@ -15,7 +15,7 @@
 
 ## MUNDARIJA
   * [Kirish](#introduction)
-  * [Ornatish](#Ornatish majburiy)
+  * [O'rnatish majburiy](#O'rnatish majburiy)
   * [Ishlatilgan texnologiyalar](#technologies-used)
   * [Xususiyatlari](#features)
   * [Website lavhalar](#screenshots)
