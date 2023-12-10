@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}A'loqa{% endblock title %}
+
+{% block content %}
+
+<section class="contact">
+    <div class="container contact-content">
+        <h2>Biz bilan bog'laning.</h2>
+        <p style="margin: 1rem 0;" >Biz sizning fikr va mulohazalaringizni eshitishga doimo tayyormiz. Bizning o'rtacha javob vaqtimiz 30 daqiqa.</p>
+        <div class="contact-container">
+            <div class="contact-img">
+                <img src='{% static 'img/contact-img.webp' %}'>
+            </div>
+            <form class="contact-form" method="post" action="/contact/">
+                {% csrf_token %}
+                <div>
+                    <label for="firstname">Ismingiz</label>
+                    <input placeholder='Ism kiriting' type="text" id="firstname" name="firstname">
+                </div>
+                <div>
+                    <label for="email">Email manzil</label>
+                    <input placeholder='example@gmail.com' type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone">Phone number</label>
+                    <input placeholder='+998 xx xxx xx xx' type="text" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="message">Xabar</label>
+                    <textarea id="message" placeholder="Xabaringiz..."></textarea>
+                </div>
+                <div>
+                    <button id="submit-button" type='submit'>Yuborish</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

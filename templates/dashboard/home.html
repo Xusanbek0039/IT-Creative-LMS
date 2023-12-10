@@ -1,0 +1,57 @@
+{% extends 'dashboard-base.html' %}
+
+{% block title %}Boshqaruv bo'limi{% endblock title %}
+
+{% block content %}
+
+<sectiion class='dashboard'>
+    <h1>&#128075; Salom, Xush kelibsiz {{user}}</h1>
+
+    <div class='stats'>
+        <div class='stat'>
+            <p class='stat-heading'>Kurslarga yozilganlar</p>
+            <p>Hozircha {{num_courses_enrolled}} - ta student</p>
+        </div>
+        <div class='stat'>
+            <p class='stat-heading'>Faol kurslar </p>
+            <p>Tizimda {{num_courses_uploaded}}-ta kurs mavjud</p>
+        </div>
+        {% comment %} <div class='stat'>
+            <p class='stat-heading'>Courses completed</p>
+            <p>100+</p>
+        </div> {% endcomment %}
+        <div class='stat'>
+            <p class='stat-heading'>Studentlar </p>
+            <p>Tizimda {{num_students}} - ta student mavjud</p>
+        </div>
+    </div>
+    <h2 style=''>So'nggi ro'yxatga o'zgarishlar</h2>
+    <div class='dashboard-table'>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Kurslar</th>
+            <th>Studentlar</th>
+            <th>Ro'yxatdan o'tish sanasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for enrollment in enrollments %}
+          <tr>
+            <td>{{ enrollment.course_title }}</td>
+            <td>{{ enrollment.student_name }}</td>
+            <td>{{ enrollment.enrollment_date }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>      
+    </div>
+</section>
+
+<style>
+    {% comment %} * {
+        outline: 1px solid green;
+    } {% endcomment %}
+</style>
+
+{% endblock content %}

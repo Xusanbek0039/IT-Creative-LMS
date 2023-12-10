@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Biz haqimizda{% endblock title %}
+
+{% block content %}
+
+<section class="about">
+    <div class="container about-content">
+        <h2>IT Creative</h2>
+        <p style="margin: 1rem 0;">Bizning vazifamiz - keng ko'lamli onlayn kurslar va o'quv dasturlari orqali o'z maqsadlariga erishish uchun zarur bo'lgan ko'nikmalar va bilimlar bilan shaxslarni kuchaytirishdir. Platforma barcha darajadagi o‘quvchilarning ehtiyojlarini qondirish va ularga o‘z martabasini oshirishda yoki yangi narsalarni o‘rganishda muvaffaqiyatga erishishga yordam berish uchun mo‘ljallangan.</p>
+        <img src='{% static 'img/about-hero-img.webp' %}'>
+    </div>
+</section>
+
+<section class="about-brands">
+    <div class="container brands-content">
+        <h2 style="font-size: 2.5rem; line-height: 2.5rem;">Bizning homiylar</h2>
+        <div class="brands">
+            <div class="brand">
+                <img src='{% static 'img/openai.webp' %}'>
+            </div>
+            <div class="brand">
+                <img src='{% static 'img/google.webp' %}'>
+            </div>
+            <div class="brand">
+                <img src='{% static 'img/microsoft.webp' %}'>
+            </div>
+            <div class="brand">
+                <img src='{% static 'img/notion.webp' %}'>
+            </div>
+            <div class="brand">
+                <img src='{% static 'img/linkedin.webp' %}'>
+            </div>
+            <div class="brand">
+                <img src='{% static 'img/github.webp' %}'>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-text">
+    <div class="container about-skillmate">
+        <div>
+            <img src='{% static 'img/about-study.webp' %}'>
+        </div>
+        <div>
+            <h2 style="font-size: 2.5rem; line-height: 2.5rem;;">Biz haqimizda </h2>
+            <p style="margin-top: 1rem;">
+                IT Creative - bu sizning professional maqsadlaringizga erishishga yordam berish uchun mo'ljallangan keng doiradagi kurslar va o'quv dasturlarini taklif qiluvchi innovatsion onlayn ta'lim platformasi.<br><br>
+
+                Karyerangizni ko'tarmoqchimisiz, yangisini boshlamoqchimisiz yoki shunchaki yangi narsalarni o'rganmoqchimisiz, SkillMate sizni qamrab oladi. Shaxsiylashtirilgan va qiziqarli o'rganish tajribamiz bilan siz o'zingizning tezligingiz va jadvalingiz bo'yicha yangi ko'nikmalarni egallashingiz mumkin.<br><br>
+                
+                <a href="/signup" class="btn">Bizga qo'shilish</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="about-numbers">
+    <div class="container numbers-content">
+        <h2 style="font-size: 2.5rem; line-height: 2.5rem;">Biz xar soniya o'sib bormoqdamiz!</h2>
+        <div class="numbers-container">
+            <div class="students-count">
+                <h2>Students</h2>
+                <p>26500 +</p>
+            </div>
+            <div class="instructors-count">
+                <h2>Instructors</h2>
+                <p>26500 +</p>
+            </div>
+            <div class="courses-count">
+                <h2>Courses</h2>
+                <p>26500 +</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

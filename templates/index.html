@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bosh saxifa{% endblock title %}
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="hero-content container">
+        <div class="hero-text">
+            <h1>Muvaffaqiyat kuchda. Kuch esa sizda.</h1>
+            <p>Minglab kurslarga kirish imkoniga ega bo'ling va bugun o'zingizning kasbiy rivojlanishingizni nazorat qiling.</p>
+            <div style="display: flex; column-gap: .5rem; margin-top: 2rem;" class="hero-cta-btn">
+                <a style="display: inline-flex; column-gap: .3rem;" class="btn" href="/accounts/signup">
+                    Qo'shilish
+                    {% comment %} <img style='height: 1.5rem; width: 1.5rem;' src='{% static 'img/arrow-right.svg' %}'> {% endcomment %}
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="white"/>
+                    </svg>                        
+                </a>
+                <a style="display: inline-flex; column-gap: .3rem;" class="btn" href="/courses">
+                    Kurslarni ko'rish
+                    {% comment %} <img style='height: 1.5rem; width: 1.5rem;' src='{% static 'img/arrow-right.svg' %}'> {% endcomment %}
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src='{% static 'img/hero-image.webp' %}'>
+        </div>
+    </div>
+</section>
+
+<section class="home-course-categories">
+    <div class="container home-course-categories-content">
+        <h2>Bizda mavjud yo'nalishlar</h2>
+        <p style="margin: 1rem 0;">Bizning turli xil kurs toifalarimizni o'rganing va ishtiyoqingiz va professional o'sishingiz uchun mukammal kursni toping.</p>
+        <div class="course-categories">
+            <div class="category">
+                <h3>Development & Deployment</h3>
+                <p style="margin-top: 1rem;">Courses on Web Development, Software Development, Game Development, and other development skills.</p>
+                <a href="/courses/development">
+                    <span class="link"></span>
+                </a>
+            </div>
+
+            <div class="category">
+                <h3>Design & Creativity</h3>
+                <p style="margin-top: 1rem;">Courses on graphic design, web design, animation, video editing, photography, and other creative skills.</p>
+                <a href="/courses/design">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Business & Entrepreneurship</h3>
+                <p style="margin-top: 1rem;">Courses on starting and growing a business, marketing, finance, project management, leadership, and other business-related skills.</p>
+                <a href="/courses/business">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Data Science & Analytics</h3>
+                <p style="margin-top: 1rem;">Courses on data analysis, machine learning, artificial intelligence, statistics, and other data-related skills.</p>
+                <a href="/courses/datascience">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Health & Wellness</h3>
+                <p style="margin-top: 1rem;">Courses on fitness, nutrition, mindfulness, meditation, and other health and wellness-related skills.</p>
+                <a href="/courses/health">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Language & Communication</h3>
+                <p style="margin-top: 1rem;">Courses on foreign languages, communication skills, writing, translation, and other language-related skills.</p>
+                <a href="/courses/communication">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Music & Entertainment</h3>
+                <p style="margin-top: 1rem;">Courses on music production, DJing, acting, screenwriting, and other entertainment-related skills.</p>
+                <a href="/courses/entertainment">
+                    <span class="link"></span>
+                </a>
+            </div>
+
+            <div class="category">
+                <h3>Science & Engineering</h3>
+                <p style="margin-top: 1rem;">Courses on physics, chemistry, biology, engineering, robotics, and other science and technology-related skills.</p>
+                <a href="/courses/science">
+                    <span class="link"></span>
+                </a>
+            </div>
+            
+            <div class="category">
+                <h3>Art & Design</h3>
+                <p style="margin-top: 1rem;">Courses on drawing, painting, sculpture, graphic design, and other creative skills.</p>
+                <a href="/courses/artdesign">
+                    <span class="link"></span>
+                </a>
+            </div>
+         
+        </div>
+    </div>
+</section>
+
+<section class="home-featured-courses">
+    <div class="container home-featured-courses-content">
+        <h2>Tanlangan kurslar</h2>
+        <p style="margin: 1rem 0;">Bizning soha mutaxassislari tomonidan o'qitiladigan eng yuqori baholangan kurslarimizni kashf qiling va bugundan yangi ko'nikmalarni egallashni boshlang.</p>
+        <div class="courses">
+            {% for course in courses|slice:6 %}
+<div class="course">
+    <div class="course-thumbnail">
+        <a href="{% url 'course_details' instructor=course.instructor slug=course.slug %}">
+            <img src='{{course.thumbnail.url}}'>
+        </a>
+    </div>
+    <div class="course-details">
+        <a href="{% url 'course_details' instructor=course.instructor slug=course.slug %}"><h3>{{ course.title|slice:":80" }}</h3></a>
+        <p style="display: inline-flex; column-gap: 1rem; justify-content: center; align-items: center;" class="instructor">
+            <img class="instructor-img" src="https://api.dicebear.com/5.x/shapes/svg?seed={{ course.instructor }}">
+            Instruktor: {{ course.instructor }}
+        </p>
+        <p class="course-desc">{{ course.description|slice:":100" }}</p>
+        <p class="course-lvl-time">
+            {{ course.level }} &middot; {{ course.duration }} Soat
+        </p>
+        <a href="{% url 'course_details' instructor=course.instructor slug=course.slug %}" class="btn enroll-btn">Hoziroq ro'yxatdan o'tish</a>
+    </div>
+</div>
+{% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="home-testimonials">
+    <div class="container home-testimonials-content">
+        <h2>Bitiruvchilar</h2>
+        <p style="margin: 1rem 0;">Bizdagi kurslarni muvafaqiyatli o'qib bitirganlar .</p>
+        <div class="testimonial-grid">
+        <img src='{% static 'img/testimonial-img.webp' %}'>
+        <div class="testimonial-container">
+            <div id="testimonial-0" class="testimonial">
+                <img src="https://api.dicebear.com/5.x/shapes/svg?seed=JohnDoe">
+                <p style=" margin: .5rem 0;">"Men ilgari ko'plab onlayn kurslarda qatnashganman, lekin bu juda yaxshi. O'qituvchi qiziqarli va mazmuni yaxshi tashkil etilgan. Men juda ko'p narsalarni o'rgandim va o'zimning yangi ko'nikmalarimni ishlatishga ishonchim komil!"</p>
+                <h3>- Husan Suyunov</h3>
+                <p style="font-size: small;">Data Analyst</p>
+            </div>
+            <div id="testimonial-1" class="testimonial">
+                <img src="https://api.dicebear.com/5.x/shapes/svg?seed=Felix">
+                <p>"Kurs kutganimdan oshib ketdi. Unda asoslardan tortib ilg‘or texnikalargacha bo‘lgan hamma narsa qamrab olingan, o‘qituvchi bilimdon va sabrli edi. Tavsiya qilaman!"</p>
+                <h3>- Xusanbek Suyunov</h3>
+                <p style="font-size: small;">Data Analyst</p>
+            </div>
+            <!-- <div id="testimonial-2" class="testimonial">
+                <img src="https://api.dicebear.com/5.x/shapes/svg?seed=Felix">
+                <p style=" margin: .5rem 0;">"I've taken many online courses before, but this one stands out. The instructor was engaging and the content was well-organized. I learned so much and feel confident putting my new skills to use!"</p>
+                <h3>John Doe</h3>
+                <p style="font-size: small;">Data Analyst</p>
+            </div> -->
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-faq">
+    <div class="container home-faq-content">
+        <h2>Ko'p beriluvchi savollar.Savollaringiz bormi? Bizda javoblar bor.</h2>
+        <p style="margin: 1rem 0;">IT Creative haqida ko'proq ma'lumot olish uchun FAQ bo'limimizni ko'rib chiqing</p>
+        <div class="faq-container">
+            <div class="faq">
+                <p class="question">IT Creative nima?</p>
+                <p class="answer">IT Creative - bu turli fanlar bo'yicha kurslar va o'quv dasturlarini taklif qiluvchi onlayn ta'limni boshqarish tizimi (LMS). U foydalanuvchilarga shaxsiylashtirilgan va qiziqarli o'rganish tajribasini taqdim etish uchun mo'ljallangan.</p>
+            </div>
+            <div class="faq">
+                <p class="question">IT Creative-dan kim foydalanishi mumkin?</p>
+                <p class="answer">IT Creative o'z mahoratini o'rganish va oshirishni istagan har bir kishi uchun ochiq. Bizning kurslarimiz o'z bilim va ko'nikmalarini rivojlantirmoqchi bo'lgan jismoniy shaxslar, korxonalar va tashkilotlar uchun mo'ljallangan.</p>
+            </div>
+            <div class="faq">
+                <p class="question">IT Creative-ga qanday ro'yxatdan o'tishim mumkin?</p>
+                <p class="answer">Siz bizning veb-saytimizga tashrif buyurib, “Ro‘yxatdan o‘tish” tugmasini bosish orqali IT Creative’ga ro‘yxatdan o‘tishingiz mumkin. Hisob qaydnomasini yaratish uchun ismingiz va elektron pochta manzilingiz kabi ba'zi asosiy ma'lumotlarni taqdim etishingiz kerak bo'ladi.</p>
+            </div>
+            <div class="faq">
+                <p class="question">IT Creative kurslari qancha turadi?</p>
+                <p class="answer">IT Creative bo'yicha kurslarning narxi fanga, kurs darajasiga va o'qituvchiga qarab o'zgaradi. Ba'zi kurslar bepul, boshqalari esa bir necha yuz dollarga tushishi mumkin. Roʻyxatdan oʻtishdan oldin kurs sahifasida kurs narxini koʻrishingiz mumkin.</p>
+            </div>
+            <div class="faq">
+                <p class="question">IT Creative kurslari uchun pulni qaytarish siyosati qanday?</p>
+                <p class="answer">IT Creative kurslari uchun toʻlovni qaytarish siyosati kurs va oʻqituvchiga qarab oʻzgaradi. Ba'zi kurslar ma'lum vaqt oralig'ida to'liq qaytarib berishni taklif qilishi mumkin, boshqalari esa umuman qaytarib berishni taklif qilmasligi mumkin. Roʻyxatdan oʻtishdan oldin kurs sahifasida kurs uchun toʻlovni qaytarish siyosatini koʻrishingiz mumkin.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

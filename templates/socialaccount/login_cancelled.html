@@ -1,0 +1,15 @@
+{% extends "socialaccount/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Kirish bekor qilindi" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Kirish bekor qilindi" %}</h1>
+
+{% url 'account_login' as login_url %}
+
+<p>{% blocktrans %}Siz mavjud hisoblaringizdan biri yordamida saytimizga kirishni bekor qilishga qaror qildingiz. Agar bu xato bo'lsa, iltimos, davom eting <a href="{{login_url}}">tizimga kirish</a>.{% endblocktrans %}</p>
+
+{% endblock %}
