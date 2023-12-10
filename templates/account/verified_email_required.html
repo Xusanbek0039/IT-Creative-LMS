@@ -2,22 +2,22 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
+{% block head_title %}{% trans "Elektron pochta manzilingizni tasdiqlang" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
+<h1>{% trans "Elektron pochta manzilingizni tasdiqlang" %}</h1>
 
 {% url 'account_email' as email_url %}
 
-<p>{% blocktrans %}This part of the site requires us to verify that
-you are who you claim to be. For this purpose, we require that you
-verify ownership of your e-mail address. {% endblocktrans %}</p>
+<p>{% blocktrans %}Saytning ushbu qismi bizdan buni tekshirishni talab qiladi
+    siz o'zingiz da'vo qilgan odamsiz. Shu maqsadda sizdan shuni talab qilamiz
+    elektron pochta manzilingiz egaligini tasdiqlang. {% endblocktrans %}</p>
 
-<p>{% blocktrans %}We have sent an e-mail to you for
-verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise
-contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+<p>{% blocktrans %}Biz sizga elektron pochta xabarini yubordik
+    tekshirish. Iltimos, ushbu elektron pochta ichidagi havolani bosing. Agar siz tasdiqlovchi elektron pochtani asosiy pochta qutingizda ko'rmasangiz, spam jildini tekshiring. Aks holda
+    Agar bir necha daqiqa ichida uni olmagan bo'lsangiz, biz bilan bog'laning.{% endblocktrans %}</p>
 
-<p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{ email_url }}">change your e-mail address</a>.{% endblocktrans %}</p>
+<p>{% blocktrans %}<strong>Eslatma:</strong> siz hali hamon E-mail manzilingizni <a href="{{ email_url }}"> o'zgartirishingiz mumkin.</a>.{% endblocktrans %}</p>
 
 
 {% endblock %}
