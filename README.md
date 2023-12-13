@@ -104,4 +104,5 @@ IT Creative - bu o'qituvchilarga Django yordamida yaratilgan kurslarni yaratish 
     <a href="https://instagram.com/husanbek_dev" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a>
+  
 </div>
