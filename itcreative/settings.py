@@ -126,21 +126,22 @@ WSGI_APPLICATION = 'itcreative.wsgi.application'
 
 
 
-from environ import Env
+import os
+from dotenv import load_dotenv
 
-env = Env()
-env.read_env() 
+load_dotenv()
 
 DATABASES = {
-  'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': env('DB_NAME'),
-    'USER': env('DB_USER'),
-    'PASSWORD': env('DB_PASSWORD'),
-    'HOST': env('DB_HOST'),
-    'PORT': env('DB_PORT'),
-  }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),  
+        'PORT': os.getenv('DB_PORT'),
+    }
 }
+
 
 
 
