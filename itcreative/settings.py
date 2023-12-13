@@ -1,7 +1,7 @@
 
 from pathlib import Path
 import os
-
+from env import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -9,7 +9,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-
+env = environ.Env(
+    # set default values and casting
+    DEBUG=(bool, False)  
+)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -125,31 +128,15 @@ LOGOUT_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'itcreative.wsgi.application'
 
 
-
-import os
-from pypika import Database
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-  'default': {
-    'ENGINE': 'pypika.Database',
-    'HOST': os.environ['DB_HOST'],
-    'PORT': os.environ['DB_PORT'],  
-    'NAME': os.environ['DB_NAME'],
-    'USER': os.environ['DB_USER'],
-    'PASSWORD': os.environ['DB_PASSWORD']
-  }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'malumot-bazasi.sqlite3',
+    }
 }
-
-
-
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'malumot-bazasi.sqlite3',
-#     }
-# }
 
 
 # Password validation
